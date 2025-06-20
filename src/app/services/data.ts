@@ -3,7 +3,7 @@ import { Coffee } from '../logic/Coffee';
 import { PlaceLocation } from '../logic/PlaceLocation';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../environment/environment';
+import { environment } from '../../environment/environment';
 @Injectable({
   providedIn: 'root'
 })
