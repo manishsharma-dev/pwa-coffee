@@ -1,0 +1,34 @@
+@for(coffee of list; track coffee) {
+<mat-card >
+  <mat-card-header>
+    <mat-card-title>{{coffee.name}}</mat-card-title>
+    <mat-card-subtitle>{{coffee.place}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button matButton (click)="showMap(coffee)">
+      <mat-icon aria-hidden="false"
+                matTooltip="Map"
+                aria-label="Example home icon"
+                fontIcon="map">
+      </mat-icon>
+    </button>
+    <button matButton (click)="shareCoffee(coffee)">
+      <mat-icon aria-hidden="false"
+                matTooltip="Share"
+                aria-label="Example home icon"
+                fontIcon="share">
+      </mat-icon>
+    </button>
+    <button matButton (click)="showDetails(coffee)">
+      <mat-icon aria-hidden="false"
+                matTooltip="Details"
+                aria-label="Example home icon"
+                fontIcon="arrow_forward">
+      </mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+}
+
+<a id="add-coffee" mat-fab color="primary" aria-label="Add Coffee" mat-fab [routerLink]="['/coffee']">
+  <mat-icon>add</mat-icon>

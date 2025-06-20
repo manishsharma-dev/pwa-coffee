@@ -1,0 +1,33 @@
+h2{
+  border-top: 1px solid gray;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+mat-slider{
+  width: 100%;
+  margin: 10px 0;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-top: 10px;
+}
+
+mat-slide-toggle {
+  width: 100%;
+  margin: 20px 0;
+}
+
+mat-card{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  mat-card {
+    width: 100%;
+  }
+}
