@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/', // Replace with your actual API URL
+  apiUrl: 'https://be-coffee-3wjj.onrender.com/', // Replace with your actual API URL
 }
